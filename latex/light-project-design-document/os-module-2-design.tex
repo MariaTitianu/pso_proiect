@@ -1,0 +1,85 @@
+
+\chapter{Design of Module \textit{Userprog}}
+
+% ================================================================================= %
+\section{Assignment Requirements}
+
+\subsection{Initial Functionality}
+
+Describe in few words (one phrase) what you are starting from in your project. Even if this is something that we all know, it could be a good opportunity for you to be sure you really understand this aspect.
+
+\subsection{Requirements}
+
+Remove the following given official requirements and describe in few words (your own words) what you are requested to do in this part of your project. Even if this is something that we all know, it could be a good opportunity for you to be sure you really understand this aspect. 
+
+
+The major requirements of the ``Userprog'' assignment are the following:
+\begin{itemize}
+    \item Handle the SyscallFileWrite() system call for the particular case of the \texttt{UM\_FILE\_HANDLE\_STDOUT} file handle, to provide the user processes the way to display something on the screen, e.g. by using the printf() function.
+    \item Handle the SyscallThreadGetTid() system call to return the id of the calling thread.
+    \item Add a new system call "\textit{STATUS SyscallThreadGetName(OUT char* ThreadName, IN QWORD ThreadNameMaxLen)}" such that to
+        \begin{itemize}
+         \item check if the given memory address (i.e. ThreadName) is valid,
+         \item copy at the given address the calling thread's name, but no more than \textit{ThreadNameMaxLen} characters, the last one being always '\\0',
+         \item return \texttt{STATUS\_SUCCESS} if the entire name was successfully copied, or \texttt{STATUS\_TRUNCATED\_THREAD\_NAME} in the other case. 
+
+        \end{itemize}
+
+    \item Add a new system call "\textit{STATUS SyscallGetTotalThreadNo(OUT QWORD* ThreadNo)}" to return the total number of ready threads.
+    
+    \item Allocate 4 memory pages (one page's size is 4096 bytes) for the stack of processes having an odd id and 16 pages for processes having an even id.
+    
+    \item Add a new system call "\textit{STATUS SyscallGetThreadUmStackAddress(OUT PVOID* StackBaseAddress)}" to return the base address of the calling process' user space stack ( i.e. where its starts, or the biggest memory address that could be reached on the stack), a value that could be noted in the function \textit{\_ThreadSetupMainThreadUserStack()}. 
+
+    \item Add a new system call "\textit{STATUS SyscallGetThreadUmStackSize(OUT QWORD* StackSize)}" to return the size of the calling threads' user space stack.
+
+    \item Add a new system call "\textit{STATUS SyscallGetThreadUmEntryPoint(OUT PVOID* EntryPoint)}" to return the user space address the calling thread's (process') execution starts, i.e. the entry point of that thread (process).
+
+    \item Create a new user application named "\textit{LightProjectApp}" to perform the following steps:
+        \begin{itemize}
+            \item Displays repeatedly on the screen the ID and the name of the process' main thread, providing different values to the ThreadNameMaxLen parameter, starting from 0 and going up the thread name's length plus 1. 
+            
+            \item Displays on the screen the number of  ready threads.
+
+            \item Displays on the screen the base address and size of the stack of the process' main thread.
+
+            \item Displays on the screen the entry point of the process. 
+        \end{itemize}
+
+\end{itemize}
+
+
+% ================================================================================= %
+\section{Design Description}
+
+\subsection{Needed Data Structures and Functions}
+
+This should be an overview of needed data structure and functions you have to use or add for satisfying the requirements. How the mentioned data structures and functions would be used, must be described in the next subsection ``Detailed Functionality''.
+
+
+\subsection{Analysis and Detailed Functionality}
+
+Here is where you must describe detailed of your design strategy, like the way the mentioned data structures are used, the way the mentioned functions are implemented and the implied algorithms. 
+
+This must be the main and the most consistent part of your design document.
+
+It very important to have a coherent and clear story (text) here, yet do not forget to put it, when the case in a technical form. So, for instance, when you want to describe an algorithm or the steps a function must take, it would be of real help for your design reader (understand your teacher) to see it as a pseudo-code (see an example below) or at least as an enumerated list. This way, could be easier to see the implied steps and their order, so to better understand your proposed solution.
+
+
+\subsection{Explanation of Your Design Decisions}
+
+This section is needed, only if you feel extra explanations could be useful in relation to your designed solution. For instance, if you had more alternative, but you chose one of them (which you described in the previous sections), here is where you can explain the reasons of your choice (which could be performance, algorithm complexity, time restrictions or simply your personal preference for the chosen solution). Though, try to keep it short. 
+
+If you had no extra explanation, this section could be omitted at all. 
+
+
+% ================================================================================= %
+\section{Tests}
+
+
+
+% ================================================================================= %
+\section{Observations}
+
+This section is also optional and it is here where you can give your teacher a feedback regarding your design activity.
+

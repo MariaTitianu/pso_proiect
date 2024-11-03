@@ -1,0 +1,132 @@
+
+\chapter{Design of Module \textit{virtualmemory}}
+
+% ================================================================================= %
+\section{Assignment Requirements}
+
+
+\subsection{Initial Functionality}
+
+Describe in few words (one phrase) what you are starting from in your project. Even if this is something that we all know, it could be a good opportunity for you to be sure you really understand this aspect.
+
+
+\subsection{Requirements}
+
+Remove the following given official requirements and describe in few words (your own words) what you are requested to do in this part of your project. Even if this is something that we all know, it could be a good opportunity for you to be sure you really understand this aspect. 
+
+
+The requirements of the ``Virtual Memory'' assignment are the following:
+\begin{itemize}
+    \item Implement the system calls \textit{SyscallVirtualAlloc(...)} and \textit{SyscallVirtualFree(...)}, whose signatures are given in file "syscall\_func.h". You should only handle cases when the following conditions on the given parameters hold simultaneously, otherwise return \texttt{STATUS\_INVALID\_PARAMETERx} (x is the number of the invalid parameter, starting from 1):
+        \begin{itemize}
+            \item  \texttt{BaseAddress == NULL} (i.e. let the kernel decide where in the calling process' virtual address space to reserve the needed pages for the requested memory);
+
+            \item \texttt{FileHandle == UM\_INVALID\_HANDLE\_VALUE} (i.e. not a memory-mapped file), and
+
+            \item \texttt{Key == 0} (no sharing).
+        \end{itemize}
+        NOTE: you could make use the kernel functions "\textit{VmmAllocRegionEx(...)}" and "\textit{VmmFreeRegionEx(...)}". 
+
+
+        \item Add a new system call "\textit{STATUS SyscallGetPageFaultNo(IN PVOID AllocatedVirtAddr, OUT QWORD* PageFaultNo);}", which stores in "\textit{PageFaultNo}" the number of page faults generated during accesses to the virtual page containing the address given by the "\textit{AllocatedVirtAddr}" parameter. 
+
+        \item Add a new system call "\textit{STATUS SyscallGetPagePhysAddr(IN PVOID AllocatedVirtAddr, OUT PVOID* AllocatedPhysAddr);}", which stores in "\textit{AllocatedPhysAddr}" the physical address the given "\textit{AllocatedVirtAddr}" is mapped to. If the page containing the given virtual address is not mapped (i.e. not present) in the physical memory, NULL should be returned.
+
+        \item Add a new system call "\textit{STATUS SyscallGetPageInternalFragmentation(IN PVOID AllocatedVirtAddr, OUT QWORD* IntFragSize);}", which stores in "\textit{IntFragSize}" the number of bytes lost due to internal fragmentation (i.e. space not required, yet allocated) in the virtual page the given "\textit{AllocatedVirtAddr}" belongs to. This could occur when the size in bytes of the allocated memory is not a multiple of page size.
+
+        \item Test your implementation writing a testing user application to containing at least the following code (also available on moodle):
+\end{itemize}
+\begin{lstlisting}
+#define PGSIZE 4096
+#define SIZE (3 * PGSIZE)
+#define PtrOff(ptr,off) (((PBYTE)(ptr)) + ((QWORD)(off)))
+STATUS
+__main(DWORD argc, char** argv)
+{
+    UNREFERENCED_PARAMETER(argc);
+    UNREFERENCED_PARAMETER(argv);
+    PVOID allocatedVirtAddr;
+    PBYTE pg, off;
+    PVOID allocatedPhysAddr;
+    QWORD i, pageFaultNo, pageIntFrag;
+    STATUS status;
+    for (i = 0; i <= PGSIZE; i += PGSIZE / 4)
+    {
+        // allocated some memory (not always a multiple of page size)
+        if (((i / (PGSIZE / 4)) % 2 == 0))
+        {
+            LOG("Allocate %d bytes, covered by %d pages\n", SIZE + i, (SIZE + i) / PGSIZE + ((SIZE + i) % PGSIZE == 0 ? 0 : 1));
+            status = SyscallVirtualAlloc(NULL, SIZE + i, VMM_ALLOC_TYPE_RESERVE | VMM_ALLOC_TYPE_COMMIT, PAGE_RIGHTS_READ | PAGE_RIGHTS_WRITE, UM_INVALID_HANDLE_VALUE, 0, &allocatedVirtAddr);
+        }
+        else
+        {
+            status = SyscallVirtualAlloc(NULL, SIZE + i, VMM_ALLOC_TYPE_RESERVE | VMM_ALLOC_TYPE_COMMIT | VMM_ALLOC_TYPE_NOT_LAZY, PAGE_RIGHTS_READ | PAGE_RIGHTS_WRITE, UM_INVALID_HANDLE_VALUE, 0, &allocatedVirtAddr);
+        }
+
+        if (!SUCCEEDED(status))
+        {
+            LOG("Cannot allocate memory: err status = %d\n", status);
+            return status;
+        }
+        // get access (write) to the allocated memory, byte by byte
+        for (off = allocatedVirtAddr; off < PtrOff(allocatedVirtAddr, SIZE + i); off += 1)
+        *(BYTE*)off = 10;
+        // get info about the allocated memory, page by page
+        for (pg = allocatedVirtAddr; pg < PtrOff(allocatedVirtAddr, SIZE + i); pg += PGSIZE)
+        {
+            SyscallGetPagePhysAddr(pg, &allocatedPhysAddr);
+            LOG("AllocatedPhysAddr = %X for AllocatedVirtAddr = %X", allocatedPhysAddr, pg);
+            SyscallGetPageFaultNo(pg, &pageFaultNo);
+            LOG("PageFaultNo = %u for VirtAddr = %X", pageFaultNo, pg);
+            SyscallGetPageInternalFragmentation(pg, &pageIntFrag);
+            LOG("InternalFrag = %u for VirtAddr = %X", pageIntFrag, pg);
+        }
+        // release the allocated memory
+        SyscallVirtualFree(allocatedVirtAddr, 0, VMM_FREE_TYPE_RELEASE);
+        status = SyscallGetPagePhysAddr(allocatedVirtAddr, &allocatedPhysAddr);
+        if (!SUCCEEDED(status))
+        {
+            LOG("AllocatedVirtAddr = %X is not mapped anymore", allocatedVirtAddr);
+        }
+        else
+        {
+            LOG("Error: AllocatedVirtAddr = %X still mapped on AllocatedPhysAddr = %X after being released", allocatedPhysAddr, allocatedVirtAddr);
+        }
+    }
+    return STATUS_SUCCESS;
+}
+\end{lstlisting}
+
+% ================================================================================= %
+\section{Design Description}
+
+\subsection{Needed Data Structures and Functions}
+
+This should be an overview of needed data structure and functions you have to use or add for satisfying the requirements. How the mentioned data structures and functions would be used, must be described in the next subsection ``Detailed Functionality''.
+
+
+\subsection{Analysis and Detailed Functionality}
+Here is where you must describe detailed of your design strategy, like the way the mentioned data structures are used, the way the mentioned functions are implemented and the implied algorithms. 
+
+This must be the main and the most consistent part of your design document.
+
+It very important to have a coherent and clear story (text) here, yet do not forget to put it, when the case in a technical form. So, for instance, when you want to describe an algorithm or the steps a function must take, it would be of real help for your design reader (understand your teacher) to see it as a pseudo-code (see an example below) or at least as an enumerated list. This way, could be easier to see the implied steps and their order, so to better understand your proposed solution.
+
+
+\subsection{Explanation of Your Design Decisions}
+
+This section is needed, only if you feel extra explanations could be useful in relation to your designed solution. For instance, if you had more alternative, but you chose one of them (which you described in the previous sections), here is where you can explain the reasons of your choice (which could be performance, algorithm complexity, time restrictions or simply your personal preference for the chosen solution). Though, try to keep it short. 
+
+If you had no extra explanation, this section could be omitted at all. 
+
+
+% ================================================================================= %
+\section{Tests}
+
+
+% ================================================================================= %
+\section{Observations}
+
+This section is also optional and it is here where you can give your teacher a feedback regarding your design activity.
+
+
