@@ -1,5 +1,7 @@
 #pragma once
 
+#include "ex_event.h"
+
 typedef enum _EX_TIMER_TYPE
 {
     ExTimerTypeAbsolute,
@@ -10,17 +12,45 @@ typedef enum _EX_TIMER_TYPE
 
 typedef struct _EX_TIMER
 {
-    // absolute time
-    QWORD               TriggerTimeUs;
+	// absolute time
+	QWORD               TriggerTimeUs;
 
-    // valid only if timer is periodic
-    QWORD               ReloadTimeUs;
+	// valid only if timer is periodic
+	QWORD               ReloadTimeUs;
 
-    EX_TIMER_TYPE       Type;
+	EX_TIMER_TYPE       Type;
 
-    volatile BOOLEAN    TimerStarted;
-    BOOLEAN             TimerUninited;
-} EX_TIMER, *PEX_TIMER;
+	volatile BOOLEAN    TimerStarted;
+	BOOLEAN             TimerUninited;
+
+	// keep track of threads waiting ( blocked ) for the timer
+	EX_EVENT TimerEvent;
+
+	// used to place the timer in a global timer list
+	LIST_ENTRY TimerListElem;
+} EX_TIMER, * PEX_TIMER;
+
+//******************************************************************************
+// Function:     ExTimerCheckAll
+// Description:  Checks if each timer from the timer list is past its trigger 
+//               time. Once this function returns, all timers that have their 
+//               trigger time smaller than the system time have been triggered.
+// Returns:      void
+//******************************************************************************
+void
+ExTimerCheckAll(
+);
+
+//******************************************************************************
+// Function:     ExTimerSystemPreinit
+// Description:  Basic global initialization. Initializes the global timer list
+//               and the lock protecting the list
+// Returns:      void
+//******************************************************************************
+_No_competing_thread_
+void
+ExTimerSystemPreinit(
+);
 
 //******************************************************************************
 // Function:     ExTimerInit

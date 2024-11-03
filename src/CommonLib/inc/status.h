@@ -118,6 +118,7 @@ C_HEADER_START
 
 // timer related errors
 #define CL_STATUS_TIMER_INVALID_FREQUENCY                  (ERROR_MASK | CUSTOMER_BIT | TIMER_MASK | 0x0001UL)
+#define CL_STATUS_TIMER_NOT_EXPIRED_YET					   (INFO_MASK | CUSTOMER_BIT | TIMER_MASK | 0x0002UL)
 
 // heap related errors
 #define CL_STATUS_HEAP_TOO_SMALL                           (ERROR_MASK | CUSTOMER_BIT | HEAP_MASK | 0x0001UL)
@@ -289,6 +290,7 @@ typedef _Return_type_success_(SUCCEEDED(return)) DWORD  STATUS;
 
 // timer related errors
 #define STATUS_TIMER_INVALID_FREQUENCY                  CL_STATUS_TIMER_INVALID_FREQUENCY
+#define STATUS_TIMER_NOT_EXPIRED_YET					CL_STATUS_TIMER_NOT_EXPIRED_YET
 
 // heap related errors
 #define STATUS_HEAP_TOO_SMALL                           CL_STATUS_HEAP_TOO_SMALL
