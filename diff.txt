@@ -1,0 +1,391 @@
+diff --git a/src/.vs/HAL9000_WithoutApplications/FileContentIndex/b902c562-88bb-4a58-89da-600eef62bb72.vsidx b/src/.vs/HAL9000_WithoutApplications/FileContentIndex/b902c562-88bb-4a58-89da-600eef62bb72.vsidx
+deleted file mode 100644
+index 5c8c2b7..0000000
+Binary files a/src/.vs/HAL9000_WithoutApplications/FileContentIndex/b902c562-88bb-4a58-89da-600eef62bb72.vsidx and /dev/null differ
+diff --git a/src/.vs/HAL9000_WithoutApplications/FileContentIndex/d0f9395f-7ab5-484b-b2fc-044637fe1b6f.vsidx b/src/.vs/HAL9000_WithoutApplications/FileContentIndex/d0f9395f-7ab5-484b-b2fc-044637fe1b6f.vsidx
+new file mode 100644
+index 0000000..c7e93b1
+Binary files /dev/null and b/src/.vs/HAL9000_WithoutApplications/FileContentIndex/d0f9395f-7ab5-484b-b2fc-044637fe1b6f.vsidx differ
+diff --git a/src/.vs/HAL9000_WithoutApplications/v17/DocumentLayout.json b/src/.vs/HAL9000_WithoutApplications/v17/DocumentLayout.json
+index 737f5d5..e3404a0 100644
+--- a/src/.vs/HAL9000_WithoutApplications/v17/DocumentLayout.json
++++ b/src/.vs/HAL9000_WithoutApplications/v17/DocumentLayout.json
+@@ -1,12 +1,88 @@
+ {
+   "Version": 1,
+   "WorkspaceRootPath": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\",
+-  "Documents": [],
++  "Documents": [
++    {
++      "AbsoluteMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\CommonLib\\inc\\status.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
++      "RelativeMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|solutionrelative:CommonLib\\inc\\status.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
++    },
++    {
++      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\src\\ex_timer.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
++      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\ex_timer.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
++    },
++    {
++      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\headers\\ex_timer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
++      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\ex_timer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
++    },
++    {
++      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\src\\ex_system.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
++      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\ex_system.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
++    }
++  ],
+   "DocumentGroupContainers": [
+     {
+       "Orientation": 0,
+       "VerticalTabListWidth": 256,
+-      "DocumentGroups": []
++      "DocumentGroups": [
++        {
++          "DockedWidth": 200,
++          "SelectedChildIndex": 0,
++          "Children": [
++            {
++              "$type": "Document",
++              "DocumentIndex": 0,
++              "Title": "status.h",
++              "DocumentMoniker": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\CommonLib\\inc\\status.h",
++              "RelativeDocumentMoniker": "CommonLib\\inc\\status.h",
++              "ToolTip": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\CommonLib\\inc\\status.h",
++              "RelativeToolTip": "CommonLib\\inc\\status.h",
++              "ViewState": "AQIAADYBAAAAAAAAAAAcwBsBAAAAAAAA",
++              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
++              "WhenOpened": "2024-11-03T20:32:15.305Z",
++              "EditorCaption": ""
++            },
++            {
++              "$type": "Document",
++              "DocumentIndex": 3,
++              "Title": "ex_system.c",
++              "DocumentMoniker": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\src\\ex_system.c",
++              "RelativeDocumentMoniker": "HAL9000\\src\\ex_system.c",
++              "ToolTip": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\src\\ex_system.c",
++              "RelativeToolTip": "HAL9000\\src\\ex_system.c",
++              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
++              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
++              "WhenOpened": "2024-11-03T19:18:12.197Z",
++              "EditorCaption": ""
++            },
++            {
++              "$type": "Document",
++              "DocumentIndex": 2,
++              "Title": "ex_timer.h",
++              "DocumentMoniker": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\headers\\ex_timer.h",
++              "RelativeDocumentMoniker": "HAL9000\\headers\\ex_timer.h",
++              "ToolTip": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\headers\\ex_timer.h",
++              "RelativeToolTip": "HAL9000\\headers\\ex_timer.h",
++              "ViewState": "AQIAABMAAAAAAAAAAAAAAB4AAAAYAAAA",
++              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
++              "WhenOpened": "2024-11-03T19:04:48.037Z",
++              "EditorCaption": ""
++            },
++            {
++              "$type": "Document",
++              "DocumentIndex": 1,
++              "Title": "ex_timer.c",
++              "DocumentMoniker": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\src\\ex_timer.c",
++              "RelativeDocumentMoniker": "HAL9000\\src\\ex_timer.c",
++              "ToolTip": "E:\\D_Temp\\anu 4\\sem 1\\pso\\HAL9000\\src\\HAL9000\\src\\ex_timer.c",
++              "RelativeToolTip": "HAL9000\\src\\ex_timer.c",
++              "ViewState": "AQIAAC4AAAAAAAAAAAAiwEUAAAAUAAAA",
++              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
++              "WhenOpened": "2024-11-03T19:03:28.287Z",
++              "EditorCaption": ""
++            }
++          ]
++        }
++      ]
+     }
+   ]
+ }
+\ No newline at end of file
+diff --git a/src/CommonLib/inc/status.h b/src/CommonLib/inc/status.h
+index 4d8381a..97bbf3e 100644
+--- a/src/CommonLib/inc/status.h
++++ b/src/CommonLib/inc/status.h
+@@ -118,6 +118,7 @@ C_HEADER_START
+ 
+ // timer related errors
+ #define CL_STATUS_TIMER_INVALID_FREQUENCY                  (ERROR_MASK | CUSTOMER_BIT | TIMER_MASK | 0x0001UL)
++#define CL_STATUS_TIMER_NOT_EXPIRED_YET					   (INFO_MASK | CUSTOMER_BIT | TIMER_MASK | 0x0002UL)
+ 
+ // heap related errors
+ #define CL_STATUS_HEAP_TOO_SMALL                           (ERROR_MASK | CUSTOMER_BIT | HEAP_MASK | 0x0001UL)
+@@ -289,6 +290,7 @@ typedef _Return_type_success_(SUCCEEDED(return)) DWORD  STATUS;
+ 
+ // timer related errors
+ #define STATUS_TIMER_INVALID_FREQUENCY                  CL_STATUS_TIMER_INVALID_FREQUENCY
++#define STATUS_TIMER_NOT_EXPIRED_YET					CL_STATUS_TIMER_NOT_EXPIRED_YET
+ 
+ // heap related errors
+ #define STATUS_HEAP_TOO_SMALL                           CL_STATUS_HEAP_TOO_SMALL
+diff --git a/src/HAL9000/headers/ex_timer.h b/src/HAL9000/headers/ex_timer.h
+index 5893c55..362835a 100644
+--- a/src/HAL9000/headers/ex_timer.h
++++ b/src/HAL9000/headers/ex_timer.h
+@@ -1,5 +1,7 @@
+ #pragma once
+ 
++#include "ex_event.h"
++
+ typedef enum _EX_TIMER_TYPE
+ {
+     ExTimerTypeAbsolute,
+@@ -10,17 +12,45 @@ typedef enum _EX_TIMER_TYPE
+ 
+ typedef struct _EX_TIMER
+ {
+-    // absolute time
+-    QWORD               TriggerTimeUs;
++	// absolute time
++	QWORD               TriggerTimeUs;
++
++	// valid only if timer is periodic
++	QWORD               ReloadTimeUs;
++
++	EX_TIMER_TYPE       Type;
++
++	volatile BOOLEAN    TimerStarted;
++	BOOLEAN             TimerUninited;
+ 
+-    // valid only if timer is periodic
+-    QWORD               ReloadTimeUs;
++	// keep track of threads waiting ( blocked ) for the timer
++	EX_EVENT TimerEvent;
+ 
+-    EX_TIMER_TYPE       Type;
++	// used to place the timer in a global timer list
++	LIST_ENTRY TimerListElem;
++} EX_TIMER, * PEX_TIMER;
+ 
+-    volatile BOOLEAN    TimerStarted;
+-    BOOLEAN             TimerUninited;
+-} EX_TIMER, *PEX_TIMER;
++//******************************************************************************
++// Function:     ExTimerCheckAll
++// Description:  Checks if each timer from the timer list is past its trigger 
++//               time. Once this function returns, all timers that have their 
++//               trigger time smaller than the system time have been triggered.
++// Returns:      void
++//******************************************************************************
++void
++ExTimerCheckAll(
++);
++
++//******************************************************************************
++// Function:     ExTimerSystemPreinit
++// Description:  Basic global initialization. Initializes the global timer list
++//               and the lock protecting the list
++// Returns:      void
++//******************************************************************************
++_No_competing_thread_
++void
++ExTimerSystemPreinit(
++);
+ 
+ //******************************************************************************
+ // Function:     ExTimerInit
+diff --git a/src/HAL9000/src/ex_system.c b/src/HAL9000/src/ex_system.c
+index bd7deb4..cc5d36e 100644
+--- a/src/HAL9000/src/ex_system.c
++++ b/src/HAL9000/src/ex_system.c
+@@ -1,11 +1,13 @@
+ #include "HAL9000.h"
+ #include "ex_system.h"
+ #include "thread_internal.h"
++#include "ex_timer.h"
+ 
+ void
+ ExSystemTimerTick(
+     void
+     )
+ {
++    ExTimerCheckAll();
+     ThreadTick();
+ }
+\ No newline at end of file
+diff --git a/src/HAL9000/src/ex_timer.c b/src/HAL9000/src/ex_timer.c
+index 8a1bd61..ae50cad 100644
+--- a/src/HAL9000/src/ex_timer.c
++++ b/src/HAL9000/src/ex_timer.c
+@@ -3,6 +3,85 @@
+ #include "iomu.h"
+ #include "thread_internal.h"
+ 
++typedef struct _GLOBAL_TIMER_LIST
++{
++	// protect the global timer list
++	LOCK TimerListLock;
++
++	// the list’s head
++	LIST_ENTRY TimerListHead;
++}GLOBAL_TIMER_LIST;
++
++static GLOBAL_TIMER_LIST m_globalTimerList;
++
++void
++ExTimerSystemPreinit(
++	void
++)
++{
++	memzero(&m_globalTimerList, sizeof(GLOBAL_TIMER_LIST));
++
++	InitializeListHead(&m_globalTimerList.TimerListHead);
++	LockInit(&m_globalTimerList.TimerListLock);
++}
++
++INT64
++ExTimerCompareListElems(
++	IN      PLIST_ENTRY Timer1,
++	IN      PLIST_ENTRY Timer2,
++	IN_OPT  PVOID       Context
++)
++{
++	ASSERT(Context == NULL);
++	ASSERT(Timer1 != NULL);
++	ASSERT(Timer2 != NULL);
++
++	return ExTimerCompareTimers(CONTAINING_RECORD(Timer1, EX_TIMER, TimerListElem), CONTAINING_RECORD(Timer2, EX_TIMER, TimerListElem));
++}
++
++INT64
++ExTimerCompareTimers(
++	IN      PEX_TIMER     FirstElem,
++	IN      PEX_TIMER     SecondElem
++)
++{
++	ASSERT(FirstElem != NULL);
++	ASSERT(SecondElem != NULL);
++	return FirstElem->TriggerTimeUs - SecondElem->TriggerTimeUs;
++}
++
++STATUS
++ExTimerCheck(
++	IN      PLIST_ENTRY     TimerListEntry,
++	IN_OPT  PVOID           FunctionContext
++)
++{
++	ASSERT(FunctionContext == NULL);
++
++	if (TimerListEntry == NULL) {
++		return STATUS_INVALID_PARAMETER1;
++	}
++
++	PEX_TIMER Timer = CONTAINING_RECORD(TimerListEntry, EX_TIMER, TimerListElem);
++	if (Timer->TimerStarted && IomuGetSystemTimeUs() >= Timer->TriggerTimeUs) {
++		ExEventSignal(&Timer->TimerEvent);
++		return STATUS_SUCCESS;
++	}
++	return STATUS_TIMER_NOT_EXPIRED_YET;
++}
++
++void
++ExTimerCheckAll(
++	void
++)
++{
++	INTR_STATE dummyState;
++
++	LockAcquire(&m_globalTimerList.TimerListLock, &dummyState);
++	ForEachElementExecute(&m_globalTimerList.TimerListHead, ExTimerCheck, NULL, 0);
++	LockRelease(&m_globalTimerList.TimerListLock, dummyState);
++}
++
+ STATUS
+ ExTimerInit(
+     OUT     PEX_TIMER       Timer,
+@@ -11,6 +90,7 @@ ExTimerInit(
+     )
+ {
+     STATUS status;
++	INTR_STATE dummyState;
+ 
+     if (NULL == Timer)
+     {
+@@ -42,7 +122,13 @@ ExTimerInit(
+         Timer->TriggerTimeUs = Time;
+     }
+ 
+-    return status;
++	LockAcquire(&m_globalTimerList.TimerListLock, &dummyState);
++	InsertOrderedList(&m_globalTimerList.TimerListHead, &Timer->TimerListElem, ExTimerCompareListElems, NULL);
++	LockRelease(&m_globalTimerList.TimerListLock, dummyState);
++
++	ExEventInit(&Timer->TimerEvent, ExEventTypeNotification, 0);
++
++	return status;
+ }
+ 
+ void
+@@ -73,6 +159,8 @@ ExTimerStop(
+     }
+ 
+     Timer->TimerStarted = FALSE;
++
++	ExEventSignal(&Timer->TimerEvent);
+ }
+ 
+ void
+@@ -87,10 +175,7 @@ ExTimerWait(
+         return;
+     }
+ 
+-    while (IomuGetSystemTimeUs() < Timer->TriggerTimeUs && Timer->TimerStarted)
+-    {
+-        ThreadYield();
+-    }
++    ExEventWaitForSignal(&Timer->TimerEvent);
+ }
+ 
+ void
+@@ -98,18 +183,15 @@ ExTimerUninit(
+     INOUT   PEX_TIMER       Timer
+     )
+ {
+-    ASSERT(Timer != NULL);
++	INTR_STATE dummyState;
+ 
+-    ExTimerStop(Timer);
++	ASSERT(Timer != NULL);
+ 
+-    Timer->TimerUninited = TRUE;
+-}
++	ExTimerStop(Timer);
+ 
+-INT64
+-ExTimerCompareTimers(
+-    IN      PEX_TIMER     FirstElem,
+-    IN      PEX_TIMER     SecondElem
+-)
+-{
+-    return FirstElem->TriggerTimeUs - SecondElem->TriggerTimeUs;
++	Timer->TimerUninited = TRUE;
++
++	LockAcquire(&m_globalTimerList.TimerListLock, &dummyState);
++	RemoveEntryList(&Timer->TimerListElem);
++	LockRelease(&m_globalTimerList.TimerListLock, dummyState);
+ }
+\ No newline at end of file
+diff --git a/src/HAL9000/src/system.c b/src/HAL9000/src/system.c
+index 6cf5bcc..90f15ae 100644
+--- a/src/HAL9000/src/system.c
++++ b/src/HAL9000/src/system.c
+@@ -21,6 +21,7 @@
+ #include "ex_system.h"
+ #include "process_internal.h"
+ #include "boot_module.h"
++#include "ex_timer.h"
+ 
+ #define NO_OF_TSS_STACKS             7
+ STATIC_ASSERT(NO_OF_TSS_STACKS <= NO_OF_IST);
+@@ -57,6 +58,7 @@ SystemPreinit(
+     CorePreinit();
+     NetworkStackPreinit();
+     ProcessSystemPreinit();
++	ExTimerSystemPreinit();
+ }
+ 
+ STATUS
