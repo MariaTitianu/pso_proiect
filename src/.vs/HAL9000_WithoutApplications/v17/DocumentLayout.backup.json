@@ -1,0 +1,220 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HAL9000folder\\HAL9000\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\thread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\thread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\shared\\kernel\\thread.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:shared\\kernel\\thread.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\ipc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\ipc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\ipc.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\ipc.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000FOLDER\\HAL9000\\SRC\\COMMONLIB\\INC\\LOCK_COMMON.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:COMMONLIB\\INC\\LOCK_COMMON.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\src\\lock_common.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|solutionrelative:CommonLib\\src\\lock_common.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\src\\list.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|solutionrelative:CommonLib\\src\\list.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\smp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\smp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\ex_event.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\ex_event.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\mutex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\mutex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\thread_internal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\thread_internal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|D:\\HAL9000folder\\HAL9000\\src\\COMMONLIB\\INC\\LIST.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA44C37A-1730-447F-8975-3DF40D559310}|CommonLib\\CommonLib.vcxproj|solutionrelative:COMMONLIB\\INC\\LIST.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ipc.c",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\ipc.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\ipc.c",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\ipc.c",
+              "RelativeToolTip": "HAL9000\\src\\ipc.c",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAWwMYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-04T09:48:14.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ipc.h",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\ipc.h",
+              "RelativeDocumentMoniker": "HAL9000\\headers\\ipc.h",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\ipc.h",
+              "RelativeToolTip": "HAL9000\\headers\\ipc.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-04T09:33:33.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "lock_common.h",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\inc\\lock_common.h",
+              "RelativeDocumentMoniker": "CommonLib\\inc\\lock_common.h",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\inc\\lock_common.h",
+              "RelativeToolTip": "CommonLib\\inc\\lock_common.h",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAWwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-04T09:30:14.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "lock_common.c",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\src\\lock_common.c",
+              "RelativeDocumentMoniker": "CommonLib\\src\\lock_common.c",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\src\\lock_common.c",
+              "RelativeToolTip": "CommonLib\\src\\lock_common.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-04T09:28:42.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "smp.h",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\smp.h",
+              "RelativeDocumentMoniker": "HAL9000\\headers\\smp.h",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\smp.h",
+              "RelativeToolTip": "HAL9000\\headers\\smp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-04T09:17:01.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "list.h",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\inc\\list.h",
+              "RelativeDocumentMoniker": "CommonLib\\inc\\list.h",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\inc\\list.h",
+              "RelativeToolTip": "CommonLib\\inc\\list.h",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAgwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-03T22:30:32.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "thread.h",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\shared\\kernel\\thread.h",
+              "RelativeDocumentMoniker": "shared\\kernel\\thread.h",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\shared\\kernel\\thread.h",
+              "RelativeToolTip": "shared\\kernel\\thread.h",
+              "ViewState": "AgIAAGUAAAAAAAAAAIAwwHsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-03T21:58:05.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ex_event.c",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\ex_event.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\ex_event.c",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\ex_event.c",
+              "RelativeToolTip": "HAL9000\\src\\ex_event.c",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAwwHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-03T21:43:40.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "mutex.c",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\mutex.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\mutex.c",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\mutex.c",
+              "RelativeToolTip": "HAL9000\\src\\mutex.c",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-03T21:43:11.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "list.c",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\src\\list.c",
+              "RelativeDocumentMoniker": "CommonLib\\src\\list.c",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\CommonLib\\src\\list.c",
+              "RelativeToolTip": "CommonLib\\src\\list.c",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAWwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-03T21:41:20.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "thread_internal.h",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\thread_internal.h",
+              "RelativeDocumentMoniker": "HAL9000\\headers\\thread_internal.h",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\headers\\thread_internal.h",
+              "RelativeToolTip": "HAL9000\\headers\\thread_internal.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-03T21:30:25.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "thread.c",
+              "DocumentMoniker": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\thread.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\thread.c",
+              "ToolTip": "D:\\HAL9000folder\\HAL9000\\src\\HAL9000\\src\\thread.c",
+              "RelativeToolTip": "HAL9000\\src\\thread.c",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAKUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-03T21:21:31.511Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
