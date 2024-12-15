@@ -7,9 +7,9 @@ cd %~dp0%
 
 call paths.cmd
 
-if [%VOL_MOUNT_LETTER%]==[__EMPTY__] goto fail
-if [%PATH_TO_VM_DISK%]==[__EMPTY__] goto fail
-if [%PATH_TO_VM_TOOLS%]==[__EMPTY__] goto fail
+if [%VOL_MOUNT_LETTER%]==[__EMPTY__] goto fail1
+if [%PATH_TO_VM_DISK%]==[__EMPTY__] goto fail2
+if [%PATH_TO_VM_TOOLS%]==[__EMPTY__] goto fail3
 
 
 rem                                                               | Without this here there is an error: 
@@ -36,9 +36,19 @@ rem Unmount the drive:
 
 goto end
 
-:fail
+:fail1
 
-echo "Failed, not all paths are valid!"
+echo "Failed, not all paths are valid!1"
+exit /b 1
+
+:fail2
+
+echo "Failed, not all paths are valid!2"
+exit /b 1
+
+:fail3
+
+echo "Failed, not all paths are valid!3"
 exit /b 1
 
 :end

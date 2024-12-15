@@ -72,11 +72,13 @@ goto end
 
 :config_DESKTOP-Q96BEM0
 
-SET PATH_TO_VM_FILE="E:\D_Temp\anu 4\sem 1\pso\HAL9000\VM\HAL9000_VM\HAL9000.vmx"
-SET PATH_TO_LOG_FILE="E:\D_Temp\anu 4\sem 1\pso\HAL9000\VM\HAL9000_VM\HAL9000.log"
-SET PATH_TO_VM_DISK="E:\D_Temp\anu 4\sem 1\pso\HAL9000\VM\HAL9000_VM\HAL9000.vmdk"
-SET PXE_PATH="E:\D_Temp\anu 4\sem 1\pso\HAL9000\PXE"
-SET PATH_TO_VIX_TOOLS="E:\Programe\WmWare17"
+SET PATH_TO_VM_TOOLS="E:\Programe\VMware Virtual Disk Development Kit"
+SET PATH_TO_LOG_FILE="E:\D_Temp\anu_4_pso_proiect\HAL9000\VM\HAL9000_VM\HAL9000.log"
+SET PATH_TO_VM_DISK="E:\D_Temp\anu_4_pso_proiect\HAL9000\VM\HAL9000_VM\HAL9000.vmdk"
+SET VOL_MOUNT_LETTER="Q:"
+SET PATH_TO_VIX_TOOLS="E:\Programe\VmWare17"
+SET PATH_TO_VM_FILE="E:\D_Temp\anu_4_pso_proiect\HAL9000\VM\HAL9000_VM\HAL9000.vmx"
+SET PXE_PATH="E:\D_Temp\anu_4_pso_proiect\HAL9000\PXE"
 goto end
 
 :end
